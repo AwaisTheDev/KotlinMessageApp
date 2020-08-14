@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0"
+
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView_userList_newMessae"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#8A8A8A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/userlist_username_newMessae"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_userList_newMessae"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_userList_newMessae"
+        app:layout_constraintTop_toTopOf="@+id/imageView_userList_newMessae" />
+</androidx.constraintlayout.widget.ConstraintLayout>

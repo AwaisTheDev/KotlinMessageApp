@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView_from_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@android:color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+
+        android:id="@+id/textView_from_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_roundcorners"
+        android:maxWidth="260dp"
+        android:padding="16dp"
+        android:text="f it doesn't then add it with the inflate call. It requires two parameters, an xml resource(the same one that you used in your original activity), and the menu object that is pass into the onCreateOptionsMenu method."
+        app:layout_constraintStart_toEndOf="@id/imageView_from_image"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
